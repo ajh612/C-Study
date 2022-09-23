@@ -1,8 +1,22 @@
 #include <stdio.h>
+int score[10000000]={0};
+int max= -1000000, mini=10000000;
 
 int main(){
-	printf("This is my first C program\n");
-	printf("Through the distant clouds of tears\n");
-	printf("I like a bridge that has washed away\n");
-	printf("My foundations were made of clay\n");
+		
+	int i, n;
+	scanf("%d", &n);
+	
+	for(i=0; i<n; i++){
+		scanf("%d", &score[i]);
+		if(max <= score[i]){
+			max = score[i];	
+		}
+		if(mini >= score[i]){
+			mini = score[i];
+		}
+	}
+	printf("%d %d", mini, max);
+	return 0;
 }
+

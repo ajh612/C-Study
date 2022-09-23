@@ -1,15 +1,23 @@
 #include <stdio.h>
-char en[20]={0};
+#include <string.h>
 
 int main(){
+	char en[20];
+	int a, b;
+ 
 	
-	int n, a;
-	scanf("%d", &n);
-	for (int i=0; i<n; i++){
-		scanf("%d", &a);
-		for (int j=0; j<a; j++){
-			scanf("%s", &en[a]);
-			printf("%s", en[a]);
+	scanf("%d", &a);
+	
+	for (int i=0; i<a; i++){
+		
+		scanf("%d", &b);
+		scanf("%s", en);
+		for (int  j=0; j<strlen(en); j++){
+			for (int k=0; k<b; k++){
+				printf("%c", en[j]);
+			}
 		}
+			printf("\n");
 	}
+	return 0;
 }

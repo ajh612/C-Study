@@ -1,27 +1,13 @@
 #include <stdio.h>
 
-int numsquare(int number);
-int sum(int n1, int n2);
-int print(int num);
-
 int main(){
-	int num1, num2, square1, square2, sum_num;
-	
-	num1 = 3;
-	num2 = 5;
-	square1 = numsquare(num1);
-	square2 = numsquare(num2);
-	sum_num = square1 + square2;
-	print (sum_num);
-}
-int numsquare (int number){
-	return(number * number);
-}
+	int a;
+	scanf("%d", &a);
 
-int sum (int n1, int n2){
-	return(n1 + n2);
-}
-
-int print (int num){
-	printf("The sum of square od two numbers is %d\n", num);
+	for (int i=0; i<a; i++){
+		for (int j=0; j<i; j++){
+			printf("*");
+		}
+		printf("\n");
+	}
 }
